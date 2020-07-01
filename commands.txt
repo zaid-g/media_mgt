@@ -15,3 +15,6 @@ fdupes -r .
 
 #replace duplicate files
 fdupes -rdN .
+
+#Use find to recursively find and delete files with "text" in their names:
+find -type f -name '*text*' -delete
