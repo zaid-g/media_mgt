@@ -7,7 +7,7 @@ find . -type f -name '*.mp4' -exec mv -i {} ~/google_photos/  \;
 #count number of files (and/or folders: not sure) in directory
 ls -1 | wc -l
 
-#rename all files of extension recursively with exif date in current dir
+#rename all files recursively with exif date in current dir
 exiftool -d '%Y%m%d-%H%M%%-03.c.%%e' '-filename<CreateDate' -recurse .
 
 #find duplicate files
