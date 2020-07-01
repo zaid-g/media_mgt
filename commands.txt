@@ -10,3 +10,8 @@ ls -1 | wc -l
 #rename all files of extension recursively with exif date in current dir
 exiftool -d '%Y%m%d-%H%M%%-03.c.%%e' '-filename<CreateDate' -recurse .
 
+#find duplicate files
+fdupes -r .
+
+#replace duplicate files
+fdupes -rdN .
